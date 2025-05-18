@@ -140,31 +140,43 @@
         </section>
 
         <!-- Social Proof -->
-        <section id="social-proof" class="wrapper style3 fade-up">
-            <div class="inner">
-                <h2>Trusted by Growth Teams</h2>
-                <p>We've helped companies across industries scale their pipelines:</p>
-                
-               <div class="trusted-companies-section">
-    <img src="assets/images/logos/enterprise1.png" 
-         alt="Trusted companies we helped grow - Tech, SaaS, Agency, Enterprise" 
-         style="max-width: 800px; width: 100%; height: auto; margin: 0 auto; display: block;"
-         loading="lazy">
-</div>
+ <section id="social-proof" class="wrapper style3 fade-up">
+    <div class="inner">
+        <h2>Trusted by Growth Teams</h2>
+        <p>We've helped companies across industries scale their pipelines:</p>
+        
+        <div class="trusted-companies-wrapper">
+            <img src="assets/images/logos/enterprise1.png" 
+                 alt="Trusted by Tech Companies, SaaS Businesses, Marketing Agencies, and Enterprises"
+                 class="trusted-companies-image">
+        </div>
+    </div>
+</section>
 
 <style>
-    .trusted-companies-section {
-        padding: 40px 0;
-        text-align: center;
-        background: rgba(255,255,255,0.03);
-        border-radius: 12px;
-        margin: 50px 0;
+        .trusted-companies-wrapper {
+        background: linear-gradient(135deg, rgba(41, 98, 255, 0.08) 0%, rgba(0, 200, 83, 0.05) 100%);
+        border-radius: 16px;
+        padding: 30px;
+        border: 1px solid rgba(41, 98, 255, 0.15);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        margin: 40px 0;
     }
     
-    @media (max-width: 768px) {
-        .trusted-companies-section img {
-            max-width: 100%;
-            padding: 0 20px;
+    .trusted-companies-image {
+        max-width: 800px;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    }
+    
+    /* Light/Dark Mode Adaptation */
+    @media (prefers-color-scheme: dark) {
+        .trusted-companies-wrapper {
+            background: linear-gradient(135deg, rgba(41, 98, 255, 0.15) 0%, rgba(0, 200, 83, 0.1) 100%);
+            border-color: rgba(41, 98, 255, 0.3);
         }
     }
 </style>
