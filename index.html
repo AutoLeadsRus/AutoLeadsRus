@@ -1,128 +1,220 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>AutoLeadsRus - AI-Powered Lead Generation</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="description" content="AI-powered lead generation that finds and qualifies prospects 24/7. Close 3X more deals with zero manual work." />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoLeadsRus | AI-Powered B2B Lead Generation</title>
+    <meta name="description" content="Get 50+ qualified B2B leads/month with our 97% accurate AI scoring system. Perfect for SaaS, agencies, and sales teams.">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "AutoLeadsRus",
+        "image": "https://www.autoleadsrus.com/images/logo.png",
+        "serviceType": "AI Lead Generation",
+        "areaServed": "Worldwide"
+    }
+    </script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
         /* Custom Brand Colors */
         :root {
-            --primary: #2962FF;
-            --secondary: #00C853;
+            --primary: #2962FF;  /* AI Blue */
+            --secondary: #00C853; /* Conversion Green */
+            --dark: #222222;
         }
-        .button.primary {
-            background-color: var(--primary);
-            border-color: var(--primary);
+        
+        /* Trust Badges */
+        .trust-badges {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
         }
-        .icon.major {
-            color: var(--primary);
+        .badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+        }
+        
+        /* Logo Grid */
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        .logo-grid:hover {
+            opacity: 1;
+            filter: grayscale(30%);
+        }
+        
+        /* Testimonials */
+        .testimonial-card {
+            background: rgba(255,255,255,0.05);
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body class="is-preload">
 
-    <!-- Header/Hero -->
+    <!-- Sidebar Navigation -->
     <section id="sidebar">
         <div class="inner">
             <nav>
                 <ul>
-                    <li><a href="#intro">Welcome</a></li>
+                    <li><a href="#intro">Home</a></li>
                     <li><a href="#features">How It Works</a></li>
-                    <li><a href="#cta">Get Started</a></li>
+                    <li><a href="#social-proof">Clients</a></li>
+                    <li><a href="#cta">Get Leads</a></li>
                 </ul>
             </nav>
         </div>
     </section>
 
+    <!-- Main Wrapper -->
     <div id="wrapper">
 
-        <!-- Intro -->
-        <section id="intro" class="wrapper style1 fullscreen fade-up" style="background-image: url('images/hero-bg.jpg'); background-size: cover;">
+        <!-- Hero Section -->
+        <section id="intro" class="wrapper style1 fullscreen fade-up" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/hero-bg.jpg') center/cover;">
             <div class="inner">
-                <img src="images/logo.png" alt="AutoLeadsRus Logo" style="max-width: 300px; margin-bottom: 30px;">
-                <h1>Your <span style="color: #2962FF;">AI-Powered</span> Sales Machine</h1>
-                <p>We find and qualify high-intent leads 24/7 – so you focus on closing deals, not chasing prospects.</p>
+                <img src="images/logo.png" alt="AutoLeadsRus" width="220" loading="lazy">
+                <h1>AI-Powered Leads <span style="color:var(--primary)">Delivered Daily</span></h1>
+                <p>Get <strong>50+ qualified B2B leads/month</strong> with our 97% accurate AI scoring system.<br> Zero manual work. Real results.</p>
                 <ul class="actions">
-                    <li><a href="#cta" class="button scrolly primary">Get Your First 10 Leads Free</a></li>
+                    <li><a href="#cta" class="button primary">Get Your Free Lead Report</a></li>
+                    <li><a href="#demo" class="button">See Live Demo →</a></li>
                 </ul>
+                
+                <div class="trust-badges">
+                    <div class="badge">
+                        <i class="fas fa-shield-alt"></i> 256-bit Encryption
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-users"></i> 500+ Clients
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-check-circle"></i> GDPR Compliant
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Features -->
         <section id="features" class="wrapper style2 spotlights">
             <section>
-                <a href="#" class="image"><img src="images/ai-scoring.jpg" alt="AI Lead Scoring" data-position="center center" /></a>
+                <a href="#" class="image"><img src="images/ai-scoring.jpg" alt="AI Lead Scoring" width="600" height="400" loading="lazy"></a>
                 <div class="content">
                     <div class="inner">
-                        <h2>Smart Lead Scoring</h2>
-                        <p>Our AI analyzes 50+ signals to rank leads by purchase probability. Only pay attention to hot prospects.</p>
+                        <h2>Precision Lead Scoring</h2>
+                        <p>Our AI analyzes 50+ intent signals including job titles, company tech stacks, and engagement patterns to deliver only sales-ready prospects.</p>
                         <ul class="actions">
-                            <li><a href="#cta" class="button">See Example Leads</a></li>
+                            <li><a href="#cta" class="button">See Sample Leads</a></li>
                         </ul>
                     </div>
                 </div>
             </section>
             <section>
-                <a href="#" class="image"><img src="images/crm-integration.jpg" alt="CRM Integration" data-position="top center" /></a>
+                <a href="#" class="image"><img src="images/crm-integration.jpg" alt="CRM Integration" width="600" height="400" loading="lazy"></a>
                 <div class="content">
                     <div class="inner">
                         <h2>Automated CRM Sync</h2>
-                        <p>Push qualified leads directly to HubSpot, Salesforce, or Zapier with one click. Zero manual entry.</p>
+                        <p>One-click integration with HubSpot, Salesforce, or Pipedrive. Leads arrive with full contact history and AI-generated notes.</p>
                     </div>
                 </div>
             </section>
         </section>
 
-        <!-- Testimonials -->
-        <section id="testimonials" class="wrapper style3 fade-up">
+        <!-- Social Proof -->
+        <section id="social-proof" class="wrapper style3 fade-up">
             <div class="inner">
-                <h2>Trusted by Growth-Focused Teams</h2>
-                <div class="features">
-                    <section>
-                        <span class="icon solid major fa-quote-left"></span>
-                        <blockquote>"AutoLeadsRus added 142 qualified leads to our pipeline in Week 1. Their AI filtering saved us 20+ hours of prospecting."</blockquote>
-                        <p><strong>— Jane D., SaaS Founder</strong></p>
-                    </section>
+                <h2>Trusted by Growth Teams</h2>
+                <p>We've helped companies across industries scale their pipelines:</p>
+                
+                <div class="logo-grid">
+                    <img src="images/logos/tech-company1.png" alt="Tech Company" width="140" loading="lazy">
+                    <img src="images/logos/saas-company2.png" alt="SaaS Company" width="140" loading="lazy">
+                    <img src="images/logos/agency1.png" alt="Marketing Agency" width="140" loading="lazy">
+                    <img src="images/logos/enterprise1.png" alt="Enterprise Client" width="140" loading="lazy">
+                </div>
+                
+                <div class="testimonial-card">
+                    <blockquote>"AutoLeadsRus added 142 qualified leads to our pipeline in the first month. Their AI filtering saved our team 20+ hours of manual prospecting per week."</blockquote>
+                    <p><strong>— Jane D., CEO at SaaSCompany</strong></p>
                 </div>
             </div>
         </section>
 
-        <!-- CTA -->
+        <!-- CTA Section -->
         <section id="cta" class="wrapper style1 fade-up">
             <div class="inner">
-                <h2>Ready to Transform Your Pipeline?</h2>
-                <p>Join 500+ businesses scaling with AI-powered leads.</p>
+                <h2>Ready to 3X Your Pipeline?</h2>
+                <p>Get your first 10 leads free. No credit card required.</p>
+                
                 <div class="split style1">
                     <section>
-                        <form method="post" action="https://formsubmit.co/AutoLeadsRus@Gmail.com">
+                        <form method="POST" action="https://formsubmit.co/AutoLeadsRUs@gmail.com">
+                            <input type="hidden" name="_subject" value="New AutoLeadsRus Signup!">
+                            <input type="hidden" name="_next" value="https://www.autoleadsrus.com/thank-you">
+                            <input type="text" name="_honey" style="display:none">
+                            
                             <div class="fields">
                                 <div class="field half">
-                                    <label for="name">Name</label>
-                                    <input type="text" name="name" id="name" required />
+                                    <label for="name">Full Name</label>
+                                    <input type="text" name="name" id="name" required>
                                 </div>
                                 <div class="field half">
                                     <label for="email">Business Email</label>
-                                    <input type="email" name="email" id="email" required />
+                                    <input type="email" name="email" id="email" required>
+                                </div>
+                                <div class="field half">
+                                    <label for="phone">Phone (Optional)</label>
+                                    <input type="tel" name="phone" id="phone">
+                                </div>
+                                <div class="field half">
+                                    <label for="company">Company</label>
+                                    <input type="text" name="company" id="company">
                                 </div>
                                 <div class="field">
-                                    <label for="message">What's Your Biggest Lead Gen Challenge?</label>
-                                    <textarea name="message" id="message" rows="3"></textarea>
+                                    <label for="needs">What's Your Biggest Lead Challenge?</label>
+                                    <textarea name="needs" id="needs" rows="3"></textarea>
                                 </div>
                             </div>
+                            
+                            <div class="ssl-badge" style="margin-bottom:20px;">
+                                <i class="fas fa-lock"></i> All data secured with 256-bit encryption
+                            </div>
+                            
                             <ul class="actions">
-                                <li><button type="submit" class="button primary">Get My Free Leads</button></li>
+                                <li>
+                                    <button type="submit" class="button primary">
+                                        <i class="fas fa-bolt"></i> Get My Free Leads
+                                    </button>
+                                </li>
                             </ul>
                         </form>
                     </section>
                     <section>
-                        <ul class="contact">
-                            <li>
-                                <h3>AI Lead Gen Tips</h3>
-                                <span>Sign up for our newsletter to get weekly tactics</span>
-                            </li>
+                        <h3>Why Choose Us?</h3>
+                        <ul class="alt">
+                            <li><i class="fas fa-check-circle" style="color:var(--secondary)"></i> 97% Lead Accuracy Guarantee</li>
+                            <li><i class="fas fa-check-circle" style="color:var(--secondary)"></i> No Long-Term Contracts</li>
+                            <li><i class="fas fa-check-circle" style="color:var(--secondary)"></i> Dedicated Account Manager</li>
+                            <li><i class="fas fa-check-circle" style="color:var(--secondary)"></i> Real-Time Lead Alerts</li>
                         </ul>
                     </section>
                 </div>
@@ -135,8 +227,9 @@
         <div class="inner">
             <ul class="menu">
                 <li>&copy; AutoLeadsRus. All rights reserved.</li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="mailto:support@autoleadsrus.com">Contact</a></li>
             </ul>
         </div>
     </footer>
@@ -149,5 +242,20 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    
+    <!-- Tawk.to Live Chat -->
+    <script>
+        setTimeout(function(){
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+                var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                s1.async=true;
+                s1.src='https://embed.tawk.to/YOUR_TAWKTO_ID/default';
+                s1.charset='UTF-8';
+                s1.setAttribute('crossorigin','*');
+                s0.parentNode.insertBefore(s1,s0);
+            })();
+        }, 30000); // Loads after 30 seconds
+    </script>
 </body>
 </html>
