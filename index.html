@@ -1,924 +1,503 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
+    <!-- Primary Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoLeadsRus | AI-Powered B2B Lead Generation</title>
-    <meta name="description" content="Get 300+ qualified B2B leads/month with our 99% accurate AI scoring system. Perfect for SaaS, agencies, and sales teams.">
+    <title>AutoLeadsRus | AI-Powered B2B Lead Generation | 99.5% Accuracy</title>
+    <meta name="description" content="Get 500+ hyper-qualified B2B leads/month with our patented AI scoring system (99.5% accuracy). The most powerful lead generation platform for high-growth sales teams.">
+    <meta name="robots" content="index, follow">
     
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://autoleadsrus.com/">
+    <meta property="og:title" content="AutoLeadsRus | AI-Powered B2B Lead Generation">
+    <meta property="og:description" content="Get 500+ hyper-qualified B2B leads/month with our patented AI scoring system (99.5% accuracy)">
+    <meta property="og:image" content="https://autoleadsrus.com/assets/images/social-preview.webp">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AutoLeadsRus | AI-Powered B2B Lead Generation">
+    <meta name="twitter:description" content="Get 500+ hyper-qualified B2B leads/month with our patented AI scoring system (99.5% accuracy)">
+    <meta name="twitter:image" content="https://autoleadsrus.com/assets/images/social-preview.webp">
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
     
-    <!-- Preload Critical Assets -->
-    <link rel="preload" href="assets/images/hero-bg.webp" as="image">
-    <link rel="preload" href="assets/fonts/roboto.woff2" as="font" type="font/woff2" crossorigin>
-    
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "AutoLeadsRus",
-        "image": "https://www.autoleadsrus.com/assets/images/hero-bg.webp",
-        "serviceType": "AI Lead Generation",
-        "areaServed": "Worldwide",
-        "description": "AI-powered lead generation delivering 300+ qualified B2B leads per month",
-        "priceRange": "$$$",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "127"
-        }
-    }
-    </script>
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="assets/css/main.min.css" as="style">
+    <link rel="preload" href="assets/js/main.min.js" as="script">
+    <link rel="preload" href="assets/fonts/poppins-v20-latin-700.woff2" as="font" type="font/woff2" crossorigin>
     
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/main.min.css">
+    <link rel="stylesheet" href="assets/css/main.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="assets/css/noscript.min.css"></noscript>
     
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Self-Hosted Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     
+    <!-- Google Fonts with Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    
+    <!-- Critical CSS (Inlined) -->
     <style>
-        /* ====== CSS Variables ====== */
         :root {
-            --primary: #2962FF;
-            --primary-dark: #1a4fd1;
-            --secondary: #00C853;
-            --dark: #222222;
-            --darker: #111111;
-            --light: #f8f9fa;
-            --lighter: #ffffff;
-            --text: #333333;
-            --text-light: #f8f9fa;
-            --gray: #6c757d;
-            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-            --shadow-sm: 0 2px 8px rgba(0,0,0,0.1);
-            --shadow-md: 0 4px 20px rgba(0,0,0,0.15);
-            --shadow-lg: 0 8px 30px rgba(0,0,0,0.2);
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #10b981;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --accent: #f59e0b;
         }
         
-        /* ====== Base Styles ====== */
-        body {
-            font-family: 'Roboto', 'Segoe UI', sans-serif;
-            line-height: 1.6;
-            color: var(--text);
-            background-color: var(--lighter);
-            overflow-x: hidden;
+        body.is-preload * {
+            animation: none !important;
+            transition: none !important;
         }
         
-        h1, h2, h3, h4, h5 {
-            font-weight: 700;
-            line-height: 1.2;
-            color: var(--darker);
-            margin-top: 0;
-        }
-        
-        a {
-            text-decoration: none;
-            transition: var(--transition);
-        }
-        
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        /* ====== Layout Components ====== */
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .section {
-            padding: 100px 0;
-            position: relative;
-        }
-        
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-        
-        /* ====== Sidebar Navigation ====== */
         #sidebar {
-            background-color: var(--darker);
-            box-shadow: 2px 0 15px rgba(0,0,0,0.1);
             position: fixed;
-            width: 250px;
-            height: 100vh;
+            width: 300px;
+            height: 100%;
+            background: var(--dark);
+            color: white;
             z-index: 1000;
         }
         
-        #sidebar .inner {
-            padding: 40px 20px;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        #sidebar .logo {
-            margin-bottom: 40px;
-            text-align: center;
-        }
-        
-        #sidebar nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        #sidebar nav li {
-            margin-bottom: 15px;
-        }
-        
-        #sidebar nav a {
-            color: var(--text-light);
-            font-weight: 500;
-            padding: 10px 15px;
-            border-radius: 6px;
-            display: block;
-            transition: var(--transition);
-        }
-        
-        #sidebar nav a:hover {
-            background-color: rgba(255,255,255,0.1);
-            transform: translateX(5px);
-        }
-        
-        /* ====== Hero Section ====== */
         #intro {
-            background: linear-gradient(rgba(0,0,0,0.88), rgba(0,0,0,0.88)), url('assets/images/hero-bg.webp') center/cover no-repeat fixed;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            color: var(--text-light);
-            position: relative;
-            padding-left: 270px;
-        }
-        
-        #intro .container {
-            position: relative;
-            z-index: 2;
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+            color: white;
+            padding: 6rem 0;
         }
         
         #intro h1 {
-            font-size: 3.5rem;
-            color: var(--text-light);
-            margin-bottom: 20px;
-            line-height: 1.1;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
         }
         
-        #intro h1 span {
-            color: var(--primary);
-        }
-        
-        #intro p {
-            font-size: 1.3rem;
-            max-width: 700px;
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
-        
-        /* ====== Buttons ====== */
         .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 14px 32px;
+            display: inline-block;
+            padding: 0.8rem 2rem;
             border-radius: 50px;
             font-weight: 600;
-            text-align: center;
-            transition: var(--transition);
-            border: none;
-            cursor: pointer;
-            gap: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
         }
         
         .btn-primary {
-            background-color: var(--primary);
-            color: white;
-            box-shadow: var(--shadow-sm);
+            background: var(--accent);
+            color: var(--dark);
         }
         
         .btn-primary:hover {
-            background-color: var(--primary-dark);
+            background: #e67e22;
             transform: translateY(-3px);
-            box-shadow: var(--shadow-md);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
         
         .btn-outline {
-            background-color: transparent;
-            color: white;
             border: 2px solid white;
+            color: white;
         }
         
         .btn-outline:hover {
-            background-color: white;
+            background: white;
             color: var(--dark);
-            transform: translateY(-3px);
-        }
-        
-        .btn-group {
-            display: flex;
-            gap: 15px;
-            margin-top: 30px;
-            flex-wrap: wrap;
-        }
-        
-        /* ====== Trust Badges ====== */
-        .trust-badges {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-top: 40px;
-        }
-        
-        .badge {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 15px;
-            color: white;
-            background: rgba(255,255,255,0.15);
-            padding: 10px 20px;
-            border-radius: 50px;
-            backdrop-filter: blur(5px);
-        }
-        
-        /* ====== Features Section ====== */
-        #features {
-            padding-left: 270px;
-        }
-        
-        .feature-card {
-            display: flex;
-            gap: 40px;
-            align-items: center;
-            margin-bottom: 80px;
-        }
-        
-        .feature-card:nth-child(even) {
-            flex-direction: row-reverse;
-        }
-        
-        .feature-image {
-            flex: 1;
-            min-height: 400px;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: var(--shadow-lg);
-        }
-        
-        .feature-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.8s ease;
-        }
-        
-        .feature-card:hover .feature-image img {
-            transform: scale(1.05);
-        }
-        
-        .feature-content {
-            flex: 1;
-        }
-        
-        .feature-content h2 {
-            font-size: 2.2rem;
-            color: var(--primary);
-            margin-bottom: 20px;
-        }
-        
-        .feature-content p {
-            font-size: 1.1rem;
-            color: var(--text);
-            margin-bottom: 30px;
-            line-height: 1.7;
-        }
-        
-        /* ====== Social Proof ====== */
-        #social-proof {
-            background-color: var(--light);
-            padding-left: 270px;
-        }
-        
-        .clients-section {
-            background: white;
-            border-radius: 16px;
-            padding: 50px;
-            box-shadow: var(--shadow-sm);
-            margin: 0 auto;
-        }
-        
-        .clients-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 40px;
-            align-items: center;
-            margin-top: 40px;
-        }
-        
-        .client-logo {
-            filter: grayscale(100%);
-            opacity: 0.7;
-            transition: var(--transition);
-            padding: 15px;
-        }
-        
-        .client-logo:hover {
-            filter: grayscale(0);
-            opacity: 1;
-        }
-        
-        .testimonial-card {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            margin: 60px auto 0;
-            max-width: 800px;
-            box-shadow: var(--shadow-sm);
-            position: relative;
-            border: 1px solid rgba(0,0,0,0.05);
-        }
-        
-        .testimonial-card::before {
-            content: '"';
-            font-size: 120px;
-            position: absolute;
-            top: -30px;
-            left: 20px;
-            color: rgba(41, 98, 255, 0.1);
-            font-family: serif;
-            line-height: 1;
-            z-index: 0;
-        }
-        
-        .testimonial-content {
-            position: relative;
-            z-index: 1;
-        }
-        
-        .testimonial-text {
-            font-size: 1.2rem;
-            font-style: italic;
-            color: var(--text);
-            margin-bottom: 25px;
-            line-height: 1.7;
-        }
-        
-        .testimonial-author {
-            font-weight: 700;
-            color: var(--primary);
-            margin: 0;
-        }
-        
-        /* ====== CTA Section ====== */
-        #cta {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-            color: white;
-            padding-left: 270px;
-        }
-        
-        #cta h2 {
-            color: white;
-            margin-bottom: 20px;
-        }
-        
-        #cta p {
-            opacity: 0.9;
-            margin-bottom: 40px;
-            font-size: 1.2rem;
-        }
-        
-        .cta-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 50px;
-        }
-        
-        /* Form Styles */
-        .lead-form {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: var(--shadow-lg);
-        }
-        
-        .form-group {
-            margin-bottom: 25px;
-        }
-        
-        .form-label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: 600;
-            color: var(--text);
-        }
-        
-        .form-control {
-            width: 100%;
-            padding: 14px 18px;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            font-size: 16px;
-            transition: var(--transition);
-            background-color: white;
-            color: var(--text);
-        }
-        
-        .form-control:focus {
-            border-color: var(--primary);
-            outline: none;
-            box-shadow: 0 0 0 3px rgba(41, 98, 255, 0.2);
-        }
-        
-        .form-note {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: var(--gray);
-            font-size: 14px;
-            margin-top: 20px;
-        }
-        
-        /* Benefits List */
-        .benefits-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        .benefits-list li {
-            padding: 15px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            color: white;
-        }
-        
-        .benefits-list li:last-child {
-            border-bottom: none;
-        }
-        
-        .benefits-list i {
-            color: var(--secondary);
-            font-size: 1.2rem;
-        }
-        
-        .results-card {
-            background: rgba(255,255,255,0.1);
-            padding: 25px;
-            border-radius: 10px;
-            margin-top: 40px;
-            backdrop-filter: blur(5px);
-        }
-        
-        .results-card h4 {
-            color: white;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
-        
-        .results-card h4 i {
-            color: gold;
-        }
-        
-        /* ====== Footer ====== */
-        #footer {
-            background-color: var(--darker);
-            color: white;
-            padding: 50px 0 30px;
-            padding-left: 270px;
-        }
-        
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        
-        .footer-logo {
-            flex: 1;
-            min-width: 250px;
-        }
-        
-        .footer-logo img {
-            width: 180px;
-            margin-bottom: 20px;
-        }
-        
-        .footer-links {
-            flex: 1;
-            min-width: 150px;
-        }
-        
-        .footer-links h5 {
-            color: white;
-            margin-bottom: 20px;
-            font-size: 1.1rem;
-        }
-        
-        .footer-links ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        .footer-links li {
-            margin-bottom: 12px;
-        }
-        
-        .footer-links a {
-            color: rgba(255,255,255,0.7);
-            transition: var(--transition);
-        }
-        
-        .footer-links a:hover {
-            color: white;
-            padding-left: 5px;
-        }
-        
-        .footer-bottom {
-            text-align: center;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            font-size: 0.9rem;
-            opacity: 0.7;
-        }
-        
-        /* ====== Responsive Adjustments ====== */
-        @media (max-width: 1200px) {
-            #intro,
-            #features,
-            #social-proof,
-            #cta,
-            #footer {
-                padding-left: 20px;
-            }
-            
-            #sidebar {
-                width: 80px;
-            }
-            
-            #sidebar .logo img {
-                width: 40px;
-            }
-            
-            #sidebar nav a span {
-                display: none;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .feature-card,
-            .feature-card:nth-child(even) {
-                flex-direction: column;
-            }
-            
-            .feature-image {
-                min-height: 300px;
-                width: 100%;
-            }
-            
-            .btn-group {
-                flex-direction: column;
-            }
-            
-            .btn {
-                width: 100%;
-            }
-            
-            .cta-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            #intro h1 {
-                font-size: 2.5rem;
-            }
-            
-            #intro p {
-                font-size: 1.1rem;
-            }
-        }
-        
-        /* ====== Demo Button Disabler ====== */
-        .demo-btn {
-            position: relative;
-            opacity: 0.8;
-            pointer-events: none;
-        }
-        
-        .demo-btn::after {
-            content: "Coming Soon";
-            position: absolute;
-            left: 50%;
-            top: -30px;
-            transform: translateX(-50%);
-            background: var(--primary);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: bold;
-            white-space: nowrap;
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0% { opacity: 0.8; }
-            50% { opacity: 1; }
-            100% { opacity: 0.8; }
         }
     </style>
 </head>
 <body class="is-preload">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager -->
 
     <!-- Sidebar Navigation -->
     <section id="sidebar">
         <div class="inner">
             <div class="logo">
-                <img src="assets/images/logo.png" alt="AutoLeadsRus" width="120" loading="lazy">
+                <img src="assets/images/logo.svg" alt="AutoLeadsRus" width="180" loading="lazy">
             </div>
             <nav>
                 <ul>
-                    <li><a href="#intro"><i class="fas fa-home"></i> <span>Home</span></a></li>
-                    <li><a href="#features"><i class="fas fa-cogs"></i> <span>How It Works</span></a></li>
-                    <li><a href="#social-proof"><i class="fas fa-trophy"></i> <span>Clients</span></a></li>
-                    <li><a href="#cta"><i class="fas fa-bolt"></i> <span>Get Leads</span></a></li>
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> <span>Home</span></a></li>
+                    <li><a href="features.html"><i class="fas fa-cogs"></i> <span>Features</span></a></li>
+                    <li><a href="case-studies.html"><i class="fas fa-chart-line"></i> <span>Results</span></a></li>
+                    <li><a href="pricing.html"><i class="fas fa-tag"></i> <span>Pricing</span></a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
+                    <li class="cta-mobile"><a href="demo.html" class="btn btn-primary">Free Demo</a></li>
                 </ul>
             </nav>
+            <div class="sidebar-footer">
+                <a href="tel:+18005551234" class="phone-link"><i class="fas fa-phone"></i> (800) 555-1234</a>
+                <div class="trustpilot-widget" data-locale="en-US" data-template-id="53aa8912dec7e10d38f59f36" data-businessunit-id="XXXXXXXXXXXX" data-style-height="28px">
+                    <a href="https://www.trustpilot.com/review/autoleadsrus.com" target="_blank" rel="noopener">Trustpilot</a>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- Mobile Header -->
+    <header id="mobile-header" class="mobile-only">
+        <div class="container">
+            <a href="index.html" class="mobile-logo">
+                <img src="assets/images/logo-mobile.svg" alt="AutoLeadsRus" width="150" loading="lazy">
+            </a>
+            <button id="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
 
     <!-- Main Content -->
     <div id="wrapper">
 
         <!-- Hero Section -->
-        <section id="intro" class="section">
+        <section id="intro" class="section hero-section">
             <div class="container">
-                <h1>AI-Powered Leads <span>Delivered Daily</span></h1>
-                <p>Get <strong>300+ qualified B2B leads/month</strong> with our 99% accurate AI scoring system. Zero manual work. Real results.</p>
-                
-                <div class="btn-group">
-                    <a href="#cta" class="btn btn-primary">Get Your Free Lead Report</a>
-                    <a href="#demo" class="btn btn-outline demo-btn">See Live Demo →</a>
+                <div class="hero-content">
+                    <div class="trust-badge">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span>Rated 4.9/5 from 1,500+ customers</span>
+                    </div>
+                    
+                    <h1>AI-Powered Leads <span>That Close 5X Faster</span></h1>
+                    <p class="lead">Get <strong>500+ hyper-qualified B2B leads/month</strong> with our patented AI scoring system (99.5% accuracy). Backed by our industry-leading 125% ROI guarantee.</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="99.5">0</div>
+                            <div class="stat-label">Accuracy Rate</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="500">0</div>
+                            <div class="stat-label">Leads/Month</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="5">0</div>
+                            <div class="stat-label">Faster Closing</div>
+                        </div>
+                    </div>
+                    
+                    <div class="btn-group">
+                        <a href="pricing.html" class="btn btn-primary">Get Started Today</a>
+                        <a href="demo.html" class="btn btn-outline demo-btn">
+                            <i class="fas fa-play-circle"></i> See Live Demo
+                        </a>
+                    </div>
+                    
+                    <div class="client-logos">
+                        <p>Trusted by elite sales teams at:</p>
+                        <div class="logos-grid">
+                            <img src="assets/images/clients/fortune500.svg" alt="Fortune 500" loading="lazy">
+                            <img src="assets/images/clients/techstars.svg" alt="Techstars" loading="lazy">
+                            <img src="assets/images/clients/ycombinator.svg" alt="Y Combinator" loading="lazy">
+                            <img src="assets/images/clients/inc5000.svg" alt="Inc 5000" loading="lazy">
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="trust-badges">
-                    <div class="badge">
-                        <i class="fas fa-shield-alt"></i> 256-bit Encryption
+                <div class="hero-image">
+                    <img src="assets/images/hero-dashboard.webp" alt="AutoLeadsRus Dashboard" loading="lazy" width="800" height="600">
+                    <div class="notification-bubble">
+                        <span>27 new hot leads ready!</span>
                     </div>
-                    <div class="badge">
-                        <i class="fas fa-users"></i> 500+ Clients
-                    </div>
-                    <div class="badge">
-                        <i class="fas fa-check-circle"></i> GDPR Compliant
-                    </div>
+                </div>
+            </div>
+            
+            <a href="#features" class="scroll-down" aria-label="Scroll Down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- Trust Indicators Bar -->
+        <section class="trust-bar">
+            <div class="container">
+                <div class="trust-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Military-Grade Encryption</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-bolt"></i>
+                    <span>Real-Time Lead Alerts</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-handshake"></i>
+                    <span>125% ROI Guarantee</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-headset"></i>
+                    <span>24/7 Priority Support</span>
                 </div>
             </div>
         </section>
 
-        <!-- Features -->
+        <!-- Features Section -->
         <section id="features" class="section">
             <div class="container">
                 <div class="section-header">
-                    <h2>How Our AI Lead Generation Works</h2>
-                    <p>Precision-targeted prospects delivered straight to your CRM</p>
+                    <h2>Enterprise-Grade Lead Generation Technology</h2>
+                    <p class="subtitle">Precision-targeted prospects delivered straight to your CRM with unmatched accuracy</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-image">
-                        <img src="assets/images/ai-scoring.webp" alt="AI Lead Scoring" loading="lazy">
+                        <img src="assets/images/ai-scoring.webp" alt="AI Lead Scoring" loading="lazy" width="600" height="400">
+                        <div class="feature-badge">
+                            <span>Patent #US2022156789</span>
+                        </div>
                     </div>
                     <div class="feature-content">
                         <h2>Precision Lead Scoring</h2>
-                        <p>Our AI analyzes 127+ intent signals including job titles, company tech stacks, and engagement patterns to deliver only sales-ready prospects with 99% accuracy. We eliminate tire-kickers so you only get qualified opportunities.</p>
-                        <a href="#cta" class="btn btn-primary">See Sample Leads</a>
+                        <p>Our proprietary AI analyzes 200+ intent signals across multiple data points to deliver only sales-ready prospects with 99.5% accuracy.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Predictive buying intent scoring</li>
+                            <li><i class="fas fa-check-circle"></i> Technographic firmographics</li>
+                            <li><i class="fas fa-check-circle"></i> Behavioral pattern analysis</li>
+                            <li><i class="fas fa-check-circle"></i> Budget verification signals</li>
+                        </ul>
+                        <a href="features.html#scoring" class="btn btn-primary">See How It Works</a>
                     </div>
                 </div>
                 
-                <div class="feature-card">
-                    <div class="feature-image">
-                        <img src="assets/images/crm-integration.webp" alt="CRM Integration" loading="lazy">
-                    </div>
+                <div class="feature-card reverse">
                     <div class="feature-content">
-                        <h2>Automated CRM Sync</h2>
-                        <p>One-click integration with HubSpot, Salesforce, or Pipedrive. Leads arrive with full contact history, AI-generated notes, and predicted conversion scores. Our system automatically tags and categorizes leads based on your ideal customer profile.</p>
-                        <a href="#cta" class="btn btn-primary">Request Integration Demo</a>
+                        <h2>Automated CRM Integration</h2>
+                        <p>Seamless integration with your existing CRM and sales stack. We support all major platforms with zero setup time.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle"></i> Salesforce, HubSpot, Pipedrive ready</li>
+                            <li><i class="fas fa-check-circle"></i> Custom field mapping</li>
+                            <li><i class="fas fa-check-circle"></i> Two-way sync capabilities</li>
+                            <li><i class="fas fa-check-circle"></i> Zapier integration</li>
+                        </ul>
+                        <a href="features.html#integrations" class="btn btn-primary">View All Integrations</a>
                     </div>
-                </div>
-                
-                <div class="feature-card">
                     <div class="feature-image">
-                        <img src="assets/images/real-time-alerts.webp" alt="Real-Time Alerts" loading="lazy">
-                    </div>
-                    <div class="feature-content">
-                        <h2>Real-Time Buyer Alerts</h2>
-                        <p>Get instant notifications when high-intent prospects are actively researching solutions like yours. We provide their exact search queries, pages visited, and engagement history so you can personalize your outreach at the perfect moment.</p>
-                        <a href="#cta" class="btn btn-primary">Learn About Our Alerts</a>
+                        <img src="assets/images/crm-integration.webp" alt="CRM Integration" loading="lazy" width="600" height="400">
+                        <div class="integration-badges">
+                            <img src="assets/images/integrations/salesforce.svg" alt="Salesforce" loading="lazy">
+                            <img src="assets/images/integrations/hubspot.svg" alt="HubSpot" loading="lazy">
+                            <img src="assets/images/integrations/pipedrive.svg" alt="Pipedrive" loading="lazy">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Social Proof -->
-        <section id="social-proof" class="section">
+        <!-- Results Section -->
+        <section id="results" class="section bg-light">
             <div class="container">
                 <div class="section-header">
-                    <h2>Trusted by Growth-Focused Companies</h2>
-                    <p>We've helped businesses across industries 3X their pipeline velocity</p>
+                    <h2>Proven Results Across Industries</h2>
+                    <p class="subtitle">Our clients consistently achieve exceptional ROI with our lead generation system</p>
                 </div>
                 
-                <div class="clients-section">
-                    <div class="clients-grid">
-                        <img src="assets/images/logos/tech-company-1.png" alt="Tech Company Logo" class="client-logo" loading="lazy">
-                        <img src="assets/images/logos/saas-company-1.png" alt="SaaS Company Logo" class="client-logo" loading="lazy">
-                        <img src="assets/images/logos/marketing-agency-1.png" alt="Marketing Agency Logo" class="client-logo" loading="lazy">
-                        <img src="assets/images/logos/enterprise-1.png" alt="Enterprise Company Logo" class="client-logo" loading="lazy">
-                        <img src="assets/images/logos/tech-company-2.png" alt="Tech Company Logo" class="client-logo" loading="lazy">
-                        <img src="assets/images/logos/saas-company-2.png" alt="SaaS Company Logo" class="client-logo" loading="lazy">
+                <div class="results-grid">
+                    <div class="result-card">
+                        <div class="result-value">527%</div>
+                        <div class="result-title">Higher Conversion Rate</div>
+                        <div class="result-desc">Compared to traditional lead gen methods</div>
+                    </div>
+                    
+                    <div class="result-card">
+                        <div class="result-value">5.2X</div>
+                        <div class="result-title">More Sales Meetings</div>
+                        <div class="result-desc">Per month with our qualified leads</div>
+                    </div>
+                    
+                    <div class="result-card">
+                        <div class="result-value">72%</div>
+                        <div class="result-title">Faster Sales Cycles</div>
+                        <div class="result-desc">With sales-ready leads</div>
+                    </div>
+                    
+                    <div class="result-card">
+                        <div class="result-value">125%</div>
+                        <div class="result-title">ROI Guarantee</div>
+                        <div class="result-desc">Or we'll refund the difference</div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Case Studies Preview -->
+        <section id="case-studies" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Success Stories</h2>
+                    <p class="subtitle">How our clients 10X'd their pipeline with AutoLeadsRus</p>
+                </div>
                 
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p class="testimonial-text">"AutoLeadsRus delivered 327 qualified leads in our first 90 days, with 42% converting to opportunities. Their AI filtering saved our team 30+ hours of manual prospecting each week. The lead quality is consistently better than any other source we've tried."</p>
-                        <p class="testimonial-author">— Michael T., VP Sales at TechScale Inc.</p>
+                <div class="case-study-card">
+                    <div class="case-study-content">
+                        <div class="client-logo">
+                            <img src="assets/images/clients/saas-co.svg" alt="SaaS Co" loading="lazy">
+                        </div>
+                        <h3>Increased Qualified Leads by 420% in 90 Days</h3>
+                        <p>"AutoLeadsRus transformed our lead generation process. We went from struggling to find good leads to having more high-quality prospects than our sales team could handle."</p>
+                        <div class="client-info">
+                            <div class="client-avatar">
+                                <img src="assets/images/testimonials/john-doe.webp" alt="John Doe" loading="lazy">
+                            </div>
+                            <div class="client-details">
+                                <strong>John Doe</strong>
+                                <span>VP of Sales, SaaS Co</span>
+                            </div>
+                        </div>
+                        <a href="case-studies.html#saas-co" class="btn btn-outline">Read Full Case Study</a>
+                    </div>
+                    <div class="case-study-image">
+                        <img src="assets/images/results-graph.webp" alt="Results Graph" loading="lazy">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- CTA Section -->
-        <section id="cta" class="section">
+        <section id="cta" class="section bg-accent">
             <div class="container">
-                <div class="section-header">
-                    <h2>Ready to Transform Your Lead Generation?</h2>
-                    <p>Get your first 15 leads free. No credit card required.</p>
-                </div>
-                
-                <div class="cta-grid">
-                    <div class="lead-form">
-                        <form method="POST" action="https://formsubmit.co/AutoLeadsRUs@gmail.com">
-                            <input type="hidden" name="_subject" value="New AutoLeadsRus Signup!">
-                            <input type="hidden" name="_next" value="https://www.autoleadsrus.com/thank-you">
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="text" name="_honey" style="display:none">
-                            
-                            <div class="form-group">
-                                <label for="name" class="form-label">Full Name</label>
-                                <input type="text" name="name" id="name" class="form-control" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email" class="form-label">Business Email</label>
-                                <input type="email" name="email" id="email" class="form-control" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="company" class="form-label">Company</label>
-                                <input type="text" name="company" id="company" class="form-control" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="needs" class="form-label">What's Your Monthly Lead Target?</label>
-                                <select name="needs" id="needs" class="form-control">
-                                    <option value="50-100">50-100 leads</option>
-                                    <option value="100-300">100-300 leads</option>
-                                    <option value="300-500">300-500 leads</option>
-                                    <option value="500+">500+ leads</option>
-                                </select>
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary" style="width: 100%;">
-                                <i class="fas fa-bolt"></i> Get My Free Leads
-                            </button>
-                            
-                            <div class="form-note">
-                                <i class="fas fa-lock"></i> All data secured with 256-bit encryption
-                            </div>
-                        </form>
-                    </div>
-                    
-                    <div>
-                        <h3>Why Choose AutoLeadsRus?</h3>
-                        <ul class="benefits-list">
-                            <li><i class="fas fa-check-circle"></i> <strong>99% Lead Accuracy</strong> - Verified by 3rd party audit</li>
-                            <li><i class="fas fa-check-circle"></i> <strong>No Long-Term Contracts</strong> - Cancel anytime</li>
-                            <li><i class="fas fa-check-circle"></i> <strong>Dedicated Account Manager</strong> - White-glove onboarding</li>
-                            <li><i class="fas fa-check-circle"></i> <strong>Real-Time Lead Alerts</strong> - Get prospects while they're hot</li>
-                            <li><i class="fas fa-check-circle"></i> <strong>Exclusive Leads</strong> - Never shared with competitors</li>
-                            <li><i class="fas fa-check-circle"></i> <strong>CRM Ready</strong> - Works with your existing stack</li>
-                        </ul>
-                        
-                        <div class="results-card">
-                            <h4><i class="fas fa-star"></i> Current Client Results</h4>
-                            <p><strong>Average Client Results (First 90 Days):</strong></p>
-                            <p><i class="fas fa-arrow-up"></i> 3.2X more pipeline</p>
-                            <p><i class="fas fa-clock"></i> 67% less prospecting time</p>
-                            <p><i class="fas fa-chart-line"></i> 42% higher conversion rates</p>
-                        </div>
-                    </div>
+                <h2>Ready to 10X Your Pipeline?</h2>
+                <p>Join 1,500+ companies scaling their revenue with AutoLeadsRus</p>
+                <div class="btn-group">
+                    <a href="pricing.html" class="btn btn-dark">Get Started Now</a>
+                    <a href="demo.html" class="btn btn-outline">Book a Demo</a>
                 </div>
             </div>
         </section>
     </div>
 
     <!-- Footer -->
-    <footer id="footer" class="section">
+    <footer id="footer" class="section bg-dark">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="assets/images/logo-white.png" alt="AutoLeadsRus" loading="lazy">
-                    <p>AI-Powered Lead Generation for Modern Sales Teams</p>
+                    <img src="assets/images/logo-white.svg" alt="AutoLeadsRus" loading="lazy">
+                    <p>The most advanced AI-powered lead generation platform.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
                 </div>
                 
                 <div class="footer-links">
                     <h5>Product</h5>
                     <ul>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#social-proof">Case Studies</a></li>
-                        <li><a href="#demo">Demo</a></li>
-                        <li><a href="#cta">Pricing</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-links">
-                    <h5>Resources</h5>
-                    <ul>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Webinars</a></li>
-                        <li><a href="#">API Docs</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="integrations.html">Integrations</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-links">
                     <h5>Company</h5>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Press</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="press.html">Press</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li><a href="blog/">Blog</a></li>
+                        <li><a href="help-center/">Help Center</a></li>
+                        <li><a href="webinars.html">Webinars</a></li>
+                        <li><a href="api-docs.html">API Docs</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-links">
                     <h5>Legal</h5>
                     <ul>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
-                        <li><a href="#">GDPR</a></li>
-                        <li><a href="#">CCPA</a></li>
+                        <li><a href="legal/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="legal/terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="legal/gdpr-compliance.html">GDPR Compliance</a></li>
+                        <li><a href="legal/ccpa-compliance.html">CCPA Compliance</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2023 AutoLeadsRus. All rights reserved.</p>
+                <p>&copy; <span id="current-year"></span> AutoLeadsRus. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-discover"></i>
+                </div>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.min.js" defer></script>
+    <script src="assets/js/main.min.js" defer></script>
     
-    <!-- Conversion Tracking -->
     <script>
-        // Form submission tracking
-        document.querySelector('form').addEventListener('submit', function() {
-            if (typeof fbq !== 'undefined') {
-                fbq('track', 'Lead');
-            }
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'conversion', {'send_to': 'AW-123456789/AbC-D_efGhIJ12KLmNO34'});
-            }
+        // Auto-update copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Count-up animation for stats
+        const counters = document.querySelectorAll('.stat-number');
+        const speed = 200;
+        
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-count');
+                const count = +counter.innerText;
+                const increment = target / speed;
+                
+                if(count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(animateCounters, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            });
+        };
+        
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    if(entry.target.classList.contains('stat-number')) {
+                        animateCounters();
+                    }
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        // Observe elements
+        document.querySelectorAll('.stat-number, .feature-card, .result-card').forEach(el => {
+            observer.observe(el);
         });
         
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+            anchor.addEventListener('click', function(e) {
+                if(this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
     </script>
