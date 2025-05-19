@@ -12,7 +12,7 @@
       border: 1px solid #ccc; 
       border-radius: 8px; 
       padding: 20px; 
-      flex: 1 1 280px; 
+      flex: 1 1 220px; 
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       background: #fff;
     }
@@ -32,6 +32,7 @@
       border-radius: 4px;
     }
     button:hover { background: #003d80; }
+    .highlight { border: 2px solid #0056b3; box-shadow: 0 0 15px #0056b3; }
   </style>
 </head>
 <body>
@@ -39,6 +40,18 @@
   <p>Choose the plan that best fits your business needs. All plans include our AI-powered lead targeting and compliance guarantees.</p>
 
   <div class="pricing-table">
+    <div class="plan highlight">
+      <h2>Trial Plan</h2>
+      <div class="plan-price">$199<span style="font-size:1rem;">/month</span></div>
+      <ul>
+        <li>Up to 150 verified leads</li>
+        <li>Basic lead targeting features</li>
+        <li>Email support</li>
+        <li>No long-term commitment</li>
+      </ul>
+      <button>Get Started</button>
+    </div>
+
     <div class="plan">
       <h2>Starter</h2>
       <div class="plan-price">$499<span style="font-size:1rem;">/month</span></div>
