@@ -38,24 +38,42 @@
             --dark: #222222;
             --light: #f8f9fa;
             --gray: #6c757d;
+            --text-dark: #333333;
+            --text-light: #ffffff;
         }
         
         /* ====== Global Improvements ====== */
         body {
             font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
             line-height: 1.6;
-            color: var(--dark);
+            color: var(--text-dark);
         }
         
         h1, h2, h3, h4 {
             font-weight: 700;
             line-height: 1.2;
+            color: var(--text-dark);
         }
         
         img {
             max-width: 100%;
             height: auto;
             display: block;
+        }
+        
+        /* ====== Sidebar Navigation ====== */
+        #sidebar {
+            background-color: rgba(0,0,0,0.9);
+        }
+        
+        #sidebar a {
+            color: var(--text-light) !important;
+            opacity: 0.9;
+        }
+        
+        #sidebar a:hover {
+            opacity: 1;
+            color: var(--primary) !important;
         }
         
         /* ====== Hero Section ====== */
@@ -77,7 +95,7 @@
         #intro h1 {
             font-size: 3.5rem;
             margin: 20px 0;
-            color: white;
+            color: var(--text-light);
         }
         
         #intro p {
@@ -146,6 +164,7 @@
         /* ====== Features Section ====== */
         #features {
             padding: 100px 0;
+            background-color: white;
         }
         
         .spotlights {
@@ -192,14 +211,28 @@
         
         .spotlights p {
             font-size: 1.1rem;
-            color: var(--gray);
+            color: var(--text-dark);
             margin-bottom: 25px;
+            line-height: 1.7;
         }
         
         /* ====== Social Proof ====== */
         #social-proof {
             padding: 80px 0;
             background-color: var(--light);
+        }
+        
+        #social-proof h2 {
+            color: var(--text-dark);
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        #social-proof p.subtitle {
+            color: var(--gray);
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
         }
         
         .trusted-companies-wrapper {
@@ -210,13 +243,21 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
             margin: 40px auto;
             max-width: 1000px;
+            text-align: center;
         }
         
         .trusted-companies-image {
             width: 100%;
             height: auto;
             display: block;
-            margin: 0 auto;
+            margin: 20px auto 0;
+        }
+        
+        .client-types {
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-top: 15px;
+            font-style: italic;
         }
         
         .testimonial-card {
@@ -243,16 +284,34 @@
         .testimonial-card blockquote {
             font-size: 1.2rem;
             font-style: italic;
-            color: var(--dark);
+            color: var(--text-dark);
             margin-bottom: 20px;
             position: relative;
             z-index: 1;
+            line-height: 1.7;
         }
         
         .testimonial-card p {
             font-weight: 600;
             color: var(--primary);
             margin: 0;
+        }
+        
+        /* ====== Form Fields ====== */
+        input, textarea, select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background-color: white;
+        }
+        
+        input:focus, textarea:focus, select:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(41, 98, 255, 0.2);
         }
         
         /* ====== CTA Section ====== */
@@ -300,22 +359,7 @@
             display: block;
             margin-bottom: 8px;
             font-weight: 600;
-            color: var(--dark);
-        }
-        
-        input, textarea {
-            width: 100%;
-            padding: 12px 15px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 16px;
-            transition: all 0.3s ease;
-        }
-        
-        input:focus, textarea:focus {
-            border-color: var(--primary);
-            outline: none;
-            box-shadow: 0 0 0 3px rgba(41, 98, 255, 0.2);
+            color: var(--text-dark);
         }
         
         .ssl-badge {
@@ -531,13 +575,14 @@
         <section id="social-proof" class="wrapper style3 fade-up">
             <div class="inner">
                 <h2>Trusted by Growth-Focused Companies</h2>
-                <p>We've helped businesses across industries 3X their pipeline velocity</p>
+                <p class="subtitle">We've helped businesses across industries 3X their pipeline velocity</p>
                 
                 <div class="trusted-companies-wrapper">
                     <img src="assets/images/logos/client-logos-combined.png" 
                          alt="Trusted by Tech Companies, SaaS Businesses, Marketing Agencies, and Enterprises"
                          class="trusted-companies-image"
                          loading="lazy">
+                    <p class="client-types">Trusted by Tech Companies, SaaS Businesses, Marketing Agencies, and Enterprises</p>
                 </div>
                 
                 <div class="testimonial-card">
