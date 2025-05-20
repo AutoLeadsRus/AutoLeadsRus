@@ -39,6 +39,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Snipcart CSS -->
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.1/default/snipcart.css" />
+    
     <style>
         /* ====== CSS Variables ====== */
         :root {
@@ -671,7 +674,14 @@
                 <p>Get <strong>300+ qualified B2B leads/month</strong> with our 99% accurate AI scoring system. Zero manual work. Real results.</p>
                 
                 <div class="btn-group">
-                    <a href="pricing.html" class="btn btn-primary">Get Your Free Lead Report</a>
+                    <button class="btn btn-primary snipcart-add-item"
+                        data-item-id="free-lead-report"
+                        data-item-price="0.00"
+                        data-item-url="/pricing.html"
+                        data-item-name="Free Lead Report"
+                        data-item-description="Get your first 15 leads free with our AI-powered lead generation system">
+                        Get Your Free Lead Report
+                    </button>
                     <a href="#demo" class="btn btn-outline demo-btn">See Live Demo →</a>
                 </div>
                 
@@ -704,7 +714,14 @@
                     <div class="feature-content">
                         <h2>Precision Lead Scoring</h2>
                         <p>Our AI analyzes 127+ intent signals including job titles, company tech stacks, and engagement patterns to deliver only sales-ready prospects with 99% accuracy. We eliminate tire-kickers so you only get qualified opportunities.</p>
-                        <a href="features.html#scoring" class="btn btn-primary">See Sample Leads</a>
+                        <button class="btn btn-primary snipcart-add-item"
+                            data-item-id="sample-leads"
+                            data-item-price="0.00"
+                            data-item-url="/features.html"
+                            data-item-name="Sample Leads"
+                            data-item-description="See examples of our AI-scored leads">
+                            See Sample Leads
+                        </button>
                     </div>
                 </div>
                 
@@ -715,7 +732,14 @@
                     <div class="feature-content">
                         <h2>Automated CRM Sync</h2>
                         <p>One-click integration with HubSpot, Salesforce, or Pipedrive. Leads arrive with full contact history, AI-generated notes, and predicted conversion scores. Our system automatically tags and categorizes leads based on your ideal customer profile.</p>
-                        <a href="features.html#integration" class="btn btn-primary">Request Integration Demo</a>
+                        <button class="btn btn-primary snipcart-add-item"
+                            data-item-id="integration-demo"
+                            data-item-price="0.00"
+                            data-item-url="/features.html"
+                            data-item-name="Integration Demo"
+                            data-item-description="Request a demo of our CRM integration">
+                            Request Integration Demo
+                        </button>
                     </div>
                 </div>
                 
@@ -726,7 +750,14 @@
                     <div class="feature-content">
                         <h2>Real-Time Buyer Alerts</h2>
                         <p>Get instant notifications when high-intent prospects are actively researching solutions like yours. We provide their exact search queries, pages visited, and engagement history so you can personalize your outreach at the perfect moment.</p>
-                        <a href="features.html#alerts" class="btn btn-primary">Learn About Our Alerts</a>
+                        <button class="btn btn-primary snipcart-add-item"
+                            data-item-id="alerts-info"
+                            data-item-price="0.00"
+                            data-item-url="/features.html"
+                            data-item-name="Alerts Information"
+                            data-item-description="Learn about our real-time buyer alerts">
+                            Learn About Our Alerts
+                        </button>
                     </div>
                 </div>
             </div>
@@ -899,6 +930,19 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    
+    <!-- Snipcart Configuration -->
+    <div hidden id="snipcart" data-api-key="YOUR_API_KEY" data-config-add-product-behavior="none"></div>
+    
+    <!-- Snipcart Script -->
+    <script>
+      window.SnipcartSettings = {
+        publicApiKey: "YOUR_API_KEY",
+        loadStrategy: "on-user-interaction",
+      };
+
+      (function(){var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0");var s,S;(S=(s=window.SnipcartSettings).timeoutDuration)!=null||(s.timeoutDuration=2750);var l,p;(p=(l=window.SnipcartSettings).domain)!=null||(l.domain="cdn.snipcart.com");var w,u;(u=(w=window.SnipcartSettings).protocol)!=null||(w.protocol="https");var m,g;(g=(m=window.SnipcartSettings).loadCSS)!=null||(m.loadCSS=!0);var y=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,f=["focus","mouseover","touchmove","scroll","keydown"];window.LoadSnipcart=o;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r();function r(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(f.forEach(function(t){return document.addEventListener(t,o)}),setTimeout(o,window.SnipcartSettings.timeoutDuration)):o()}var a=!1;function o(){if(a)return;a=!0;let t=document.getElementsByTagName("head")[0],n=document.querySelector("#snipcart"),i=document.querySelector('src[src^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][src$="snipcart.js"]')),e=document.querySelector('link[href^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][href$="snipcart.css"]'));n||(n=document.createElement("div"),n.id="snipcart",n.setAttribute("hidden","true"),document.body.appendChild(n)),h(n),i||(i=document.createElement("script"),i.src="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.js"),i.async=!0,t.appendChild(i)),!e&&window.SnipcartSettings.loadCSS&&(e=document.createElement("link"),e.rel="stylesheet",e.type="text/css",e.href="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.css"),t.prepend(e)),f.forEach(function(v){return document.removeEventListener(v,o)})}function h(t){!y||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
+    </script>
     
     <!-- Conversion Tracking -->
     <script>
